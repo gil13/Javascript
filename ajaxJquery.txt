@@ -1,7 +1,7 @@
 $.ajax({
 	type: "POST",
-	url: "https://ei-bancamovil.grupobbva.com/ENPP/enpp_mult_web_mobility_02/privateConfiguration/v1",
-	data: JSON.stringify(simulationData),
+	url: "url",
+	data: JSON.stringify(data),
 	contentType: "application/json; charset=utf-8",
 	dataType: "json",
 
@@ -12,4 +12,13 @@ $.ajax({
 	error: function (xhr, textStatus, errorThrown) {
     	console.log("error");
 	}
+});
+
+$.ajax({
+        url: "url",
+        type: "GET",
+        crossDomain : true,
+        contentType: 'text/plain',
+        dataType: 'jsonp',
+        jsonp: "callback",
 });
